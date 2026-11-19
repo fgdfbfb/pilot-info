@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel's Aviation Journey | pilotinfo.online</title>
+<style>
+:root{--navy:#071b3a;--blue:#0757a6;--sky:#eaf4ff;--gold:#f5bd45;--ink:#17243a;--muted:#64748b;--line:#dce5ef;--white:#fff;--green:#16845b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:#f5f8fc;line-height:1.65}
+header{background:linear-gradient(120deg,#061a38,#064b8f);color:white;padding:28px max(22px,calc((100% - 1160px)/2)) 56px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.08em;font-size:13px}.tag{border:1px solid #ffffff55;border-radius:30px;padding:6px 12px;font-size:12px;color:#dcecff}
+.hero{max-width:850px;padding-top:50px}.eyebrow{color:#9ed0ff;text-transform:uppercase;letter-spacing:.16em;font-weight:700;font-size:12px}.hero h1{font-size:clamp(38px,7vw,66px);line-height:1.04;margin:12px 0 18px;letter-spacing:-.04em}.hero p{font-size:18px;color:#dce9f8;max-width:720px}.hero strong{color:white}
+.wrap{max-width:1160px;margin:-26px auto 60px;padding:0 20px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stat{background:white;border:1px solid var(--line);border-radius:15px;padding:18px 20px;box-shadow:0 8px 24px #102c5010}.stat b{display:block;font-size:24px;color:var(--blue)}.stat span{font-size:13px;color:var(--muted)}
+nav{display:flex;gap:8px;overflow:auto;padding:22px 0 14px;position:sticky;top:0;background:#f5f8fc;z-index:5}
+nav button{border:1px solid var(--line);background:white;color:#29405d;border-radius:9px;padding:10px 14px;font-weight:700;white-space:nowrap;cursor:pointer}
+nav button.active{background:var(--navy);border-color:var(--navy);color:white}
+.panel{display:none;background:white;border:1px solid var(--line);border-radius:17px;padding:clamp(20px,4vw,38px);box-shadow:0 10px 30px #102c5008}.panel.active{display:block}
+h2{font-size:30px;line-height:1.2;margin:0 0 12px;color:var(--navy)}h3{font-size:19px;color:var(--navy);margin:24px 0 8px}p{margin:8px 0 14px}.lead{font-size:17px;color:#42536a}.muted{color:var(--muted)}.small{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}.card{border:1px solid var(--line);border-radius:13px;padding:18px;background:#fff}.card h3{margin:0 0 7px}.bluebox{background:var(--sky);border-left:4px solid var(--blue);padding:15px 18px;border-radius:9px;margin:18px 0}.warning{background:#fff8e8;border-left:4px solid var(--gold);padding:15px 18px;border-radius:9px;margin:18px 0}.greenbox{background:#edf9f3;border-left:4px solid var(--green);padding:15px 18px;border-radius:9px;margin:18px 0}
+ul,ol{padding-left:22px}li{margin:6px 0}.step{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:17px 0;border-bottom:1px solid var(--line)}.num{width:40px;height:40px;border-radius:50%;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-weight:800}.step h3{margin:0 0 5px}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f1f6fc;color:var(--navy)}
+a{color:#0757a6;font-weight:650} .pill{display:inline-block;background:#eef4fb;color:#24527f;border-radius:20px;padding:3px 9px;font-size:12px;font-weight:700}
+.progressbar{height:12px;background:#e7edf4;border-radius:20px;overflow:hidden;margin:12px 0}.progressbar div{height:100%;background:linear-gradient(90deg,#0870c9,#24a477);width:0;transition:width .2s}
+.checkgroup{margin:20px 0}.checkrow{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-bottom:1px solid #edf1f5}.checkrow input{margin-top:6px;accent-color:#0757a6;transform:scale(1.15)}.checkrow label{flex:1}.checkrow small{display:block;color:var(--muted)}
+input[type=text],textarea{width:100%;padding:11px;border:1px solid #cbd7e4;border-radius:8px;font:inherit}textarea{min-height:90px}.btn{border:0;background:var(--blue);color:white;padding:10px 15px;border-radius:8px;font-weight:700;cursor:pointer;margin:8px 6px 0 0}.btn.secondary{background:#eaf1f8;color:#193e67}.resource{padding:12px 0;border-bottom:1px solid var(--line)}footer{background:var(--navy);color:#dce9f8;padding:28px 20px;text-align:center;font-size:13px}
+@media(max-width:700px){.stats,.grid{grid-template-columns:1fr}.hero{padding-top:34px}.stat{padding:14px 17px}table{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<header>
+ <div class="top"><div class="brand">PILOTINFO.ONLINE · DANIEL'S AVIATION JOURNEY</div><div class="tag">My journey towards the flight deck</div></div>
+ <div class="hero">
+  <div class="eyebrow">From beginner to airline cockpit</div>
+  <h1>Learning today.<br>Flying tomorrow.</h1>
+  <p>My journey into aviation, documenting what I have researched, learned and worked towards as I pursue the goal of becoming an airline pilot — with <strong>KLM Royal Dutch Airlines</strong> as a leading ambition.</p>
+ </div>
+</header>
+<div class="wrap">
+ <div class="stats">
+  <div class="stat"><b>Zero experience</b><span>The plan starts before your first flight lesson.</span></div>
+  <div class="stat"><b>KLM-focused</b><span>The KLM Flight Academy route is the main pathway explored.</span></div>
+  <div class="stat"><b>Personal tracker</b><span>Record completed steps and what you still need to do.</span></div>
+ </div>
+ <nav aria-label="Website sections">
+  <button class="active" data-tab="home">Overview</button><button data-tab="journey">My journey</button><button data-tab="roadmap">Pilot roadmap</button><button data-tab="training">Flight training</button><button data-tab="klm">KLM requirements</button><button data-tab="school">Learning & preparation</button><button data-tab="costs">Costs & funding</button><button data-tab="timeline">Future timeline</button><button data-tab="photos">Photo gallery</button><button data-tab="resources">Resources</button>
+ </nav>
+
+ <section id="home" class="panel active">
+  <h2>Welcome to my aviation journey</h2>
+  <p class="lead">I'm starting at the beginning, learning about aviation and mapping out the steps required to become a professional airline pilot. This site is a public record of that journey — what I've completed so far, what I'm learning, and the goals I'm working towards.</p>
+  <div class="grid">
+   <div class="card"><h3>My ambition</h3><p>To build a career as an airline pilot, with KLM Royal Dutch Airlines as my main long-term goal.</p></div>
+   <div class="card"><h3>Where I am starting</h3><p>At the research and preparation stage, with no previous professional flight training or pilot licence.</p></div>
+  </div>
+  <div class="bluebox"><b>The main route to investigate:</b> finish the right secondary-school education → meet KLM Flight Academy's nationality, Dutch-language and medical requirements → pass its selection → complete its integrated pilot course → meet KLM's employment and operational requirements.</div>
+  <h3>Important reality check</h3>
+  <p>KLM has its own flight school, the <b>KLM Flight Academy (KFA)</b>. Its published programme is designed to train people from the beginning. However, admission is selective and the academy's current rules create some important hurdles for an applicant educated in Canada.</p>
+  <div class="grid">
+   <div class="card"><h3>1. The direct KLM pathway</h3><p>Apply to KLM Flight Academy. The academy describes a roughly two-year course and says successful graduates may enter KLM, subject to successfully completing training and the conditions in the employment agreement.</p><span class="pill">Primary option</span></div>
+   <div class="card"><h3>2. The alternative pathway</h3><p>Complete EASA professional pilot training at another approved European flight school, build airline experience, and later apply for a KLM vacancy if you meet the requirements at that time.</p><span class="pill">Backup option</span></div>
+  </div>
+  <div class="warning"><b>Three things to investigate early:</b> KFA currently lists Dutch or EU-member-state nationality, very good Dutch, and specific academic subjects. Its page says a foreign diploma must be assessed by Nuffic and additional Dutch-level mathematics and physics certificates are required. Confirm your personal eligibility with KFA before spending money on training.</div>
+  <h3>What this plan assumes</h3>
+  <ul><li>You are starting without a pilot licence or logged flight hours.</li><li>You are currently in Canada and will need to plan for Canadian secondary-school credentials.</li><li>You are interested in KLM specifically, not just any airline.</li><li>All admissions, immigration, licensing and hiring rules must be checked again when you apply; they can change.</li></ul>
+ </section>
+
+ <section id="journey" class="panel">
+  <h2>My journey so far</h2>
+  <p class="lead">This is a public record of the work I've actually completed and the aviation subjects I'm actively exploring. As I reach new milestones, this page will grow.</p>
+  <div class="step"><div class="num">01</div><div><h3>Started planning an airline pilot career</h3><p>I've begun mapping out what it takes to become an airline pilot from the very beginning, including the education, training, licensing and medical steps involved.</p><span class="pill">Completed · Career research</span></div></div>
+  <div class="step"><div class="num">02</div><div><h3>Researched the KLM pathway</h3><p>I've explored KLM Royal Dutch Airlines and KLM Flight Academy as a potential route into commercial aviation, including their published admission requirements and training structure.</p><span class="pill">Completed · Initial research</span></div></div>
+  <div class="step"><div class="num">03</div><div><h3>Created a structured pilot roadmap</h3><p>I've organized the journey into clear stages, from beginner aviation knowledge and school preparation through professional flight training and airline recruitment.</p><span class="pill">Completed · Planning</span></div></div>
+  <div class="step"><div class="num">04</div><div><h3>Built this aviation website</h3><p>I've created pilotinfo.online as a place to share my goals, research, learning and future milestones as I work towards the flight deck.</p><span class="pill">Completed · Website project</span></div></div>
+  <div class="bluebox"><b>What I'm focusing on now:</b> learning more about aircraft and airline operations, strengthening the academic subjects needed for pilot training, exploring Dutch language requirements, and confirming the eligibility rules for KLM Flight Academy.</div>
+  <h3>What comes next</h3>
+  <p>My next milestones are to get clear answers about Canadian education equivalency and KLM's nationality requirements, keep building my aviation knowledge, and prepare for the future medical and selection process when I'm eligible.</p>
+ </section>
+ <section id="roadmap" class="panel">
+  <h2>The complete roadmap</h2><p class="lead">Follow these stages in order. Some can overlap, but do not pay for flight training before checking medical and eligibility requirements.</p>
+  <div class="step"><div class="num">01</div><div><h3>Understand the profession</h3><p>Learn what airline pilots do: flight planning, weather decisions, aircraft systems, checklists, radio communication, teamwork, fatigue management and passenger safety. Start learning aviation terminology and basic aerodynamics.</p></div></div>
+  <div class="step"><div class="num">02</div><div><h3>Build your school foundation</h3><p>Complete secondary school. Prioritize mathematics, physics, English and Dutch. KFA's published Dutch admission page specifies different subject combinations for HAVO and VWO, and asks applicants with foreign qualifications to obtain a Nuffic assessment and additional Dutch-level maths and physics certificates.</p></div></div>
+  <div class="step"><div class="num">03</div><div><h3>Check citizenship and right to study/work</h3><p>KFA currently lists Dutch or EU-member-state nationality. KLM's direct pilot recruitment page also lists a valid passport from an EU member state (and certain associated European states). Canadian citizenship alone does not meet that published nationality requirement. Ask KFA and KLM recruitment what documents they accept and whether your circumstances qualify.</p></div></div>
+  <div class="step"><div class="num">04</div><div><h3>Reach the required Dutch and English level</h3><p>KFA says applicants who are not fluent in spoken and written Dutch cannot participate and advises at least B2 if learning Dutch. KLM's direct pilot vacancy criteria require fluent Dutch and English; non-native Dutch speakers must pass a B2 Dutch exam before selection.</p></div></div>
+  <div class="step"><div class="num">05</div><div><h3>Check aviation medical eligibility</h3><p>Before committing to expensive training, arrange an initial EASA Class 1 medical with an authorized aviation medical examiner. Ask about eyesight, colour vision, hearing, general health and any individual concerns. Only the authorized medical process can determine whether you qualify.</p></div></div>
+  <div class="step"><div class="num">06</div><div><h3>Apply to KLM Flight Academy</h3><p>When you meet the published entry conditions, submit the required school records and certificates. KFA's selection currently includes a pre-selection, basic aptitude assessment, sensorimotor assessment, competency assessment and a final admissions interview. Its published selection period is approximately three to six months.</p></div></div>
+  <div class="step"><div class="num">07</div><div><h3>Complete professional flight training</h3><p>Study aviation theory, fly single-engine aircraft, progress to multi-engine aircraft, complete instrument training and commercial flight training, then complete multi-crew cooperation and aircraft type-rating training as required by the programme.</p></div></div>
+  <div class="step"><div class="num">08</div><div><h3>Graduate with the required licences and ratings</h3><p>KFA says successful graduates receive a Frozen ATPL(A), CPL(A), multi-engine and instrument qualifications, night qualification, radio-telephony and language endorsements, MCC certificate and a type rating. The exact package can change, so check the course details for your intake.</p></div></div>
+  <div class="step"><div class="num">09</div><div><h3>Complete airline induction and start flying</h3><p>After successful training and satisfaction of the employment agreement's conditions, move into the relevant KLM cockpit position. Airline-specific training, checks and supervised operating experience apply. You continue recurrent simulator and proficiency checks throughout your career.</p></div></div>
+  <div class="step"><div class="num">10</div><div><h3>Build your airline career</h3><p>Gain experience, maintain medical and licence validity, complete recurrent training and develop as a professional crew member. Career progression depends on performance, seniority, operational needs and vacancies.</p></div></div>
+ </section>
+
+ <section id="training" class="panel">
+  <h2>Flight training explained</h2><p class="lead">These are the main licences and qualifications you will hear about. The KLM Flight Academy route is integrated, so you may not need to obtain every item separately before entering.</p>
+  <h3>Starting from zero</h3>
+  <div class="card"><b>Ab-initio training</b><p>This means training from the beginning. You do not need previous flight hours to start an approved ab-initio course, provided you meet that school's entry requirements.</p></div>
+  <h3>Key licences and ratings</h3>
+  <table><thead><tr><th>Qualification</th><th>What it means</th><th>Why it matters</th></tr></thead><tbody>
+   <tr><td><b>PPL(A)</b></td><td>Private Pilot Licence — Aeroplane.</td><td>Allows private, non-commercial flying within licence privileges. It is not an airline job licence.</td></tr>
+   <tr><td><b>CPL(A)</b></td><td>Commercial Pilot Licence — Aeroplane.</td><td>Allows commercial pilot privileges within the licence and ratings held.</td></tr>
+   <tr><td><b>IR</b></td><td>Instrument Rating.</td><td>Qualifies a pilot to fly under instrument flight rules when appropriately rated and current.</td></tr>
+   <tr><td><b>MEP</b></td><td>Multi-Engine Piston class rating.</td><td>Qualifies the pilot on the relevant class of multi-engine piston aircraft.</td></tr>
+   <tr><td><b>ATPL theory / Frozen ATPL</b></td><td>ATPL theoretical exams passed, while the pilot holds the required lower-level licence and experience is still being built.</td><td>Common airline-entry qualification. The full EASA ATPL has additional age, experience and other requirements.</td></tr>
+   <tr><td><b>MCC</b></td><td>Multi-Crew Cooperation.</td><td>Trains pilots to work together in a multi-pilot cockpit.</td></tr>
+   <tr><td><b>UPRT</b></td><td>Upset Prevention and Recovery Training.</td><td>Training to recognize and recover from unusual aircraft attitudes.</td></tr>
+   <tr><td><b>Type rating</b></td><td>Qualification for a specific aircraft type.</td><td>Required before operating that aircraft type as a flight crew member.</td></tr>
+  </tbody></table>
+  <h3>What happens at KLM Flight Academy?</h3>
+  <p>KFA currently describes four phases over approximately two years:</p>
+  <ol><li><b>About 9 months:</b> theoretical training at Eelde.</li><li><b>About 6 months:</b> single-engine flight training at Eelde.</li><li><b>About 6 months:</b> multi-engine flying, including the CPL phase.</li><li><b>About 3 months:</b> integrated MCC/type-rating training at Schiphol.</li></ol>
+  <div class="bluebox">A Frozen ATPL is not the same as holding the full ATPL. Under EASA rules, the full aeroplane ATPL has a minimum age of 21 and requires the applicable training, examinations, experience and skill test.</div>
+  <p class="small">Training phases and durations are KFA's published outline, not a guarantee of an individual's graduation date.</p>
+ </section>
+
+ <section id="klm" class="panel">
+  <h2>KLM and KLM Flight Academy requirements</h2><p class="lead">There are two different sets of rules: entry to the flight academy, and direct recruitment by KLM as an already-qualified pilot. Do not confuse them.</p>
+  <h3>KLM Flight Academy — published admission points</h3>
+  <ul>
+   <li><b>Age:</b> at least 17 at the start of training (current published rule).</li>
+   <li><b>Nationality:</b> Dutch or a nationality of an EU member state.</li>
+   <li><b>Language:</b> very good spoken and written Dutch; KFA says at least B2 if you are learning Dutch. English is also required academically.</li>
+   <li><b>Education:</b> acceptable secondary-school diploma and required subjects. HAVO: mathematics B, physics, English and Dutch, with an additional physics course in the specified circumstances. VWO: mathematics A or B, physics, English and Dutch.</li>
+   <li><b>Foreign education:</b> KFA says a foreign diploma must be assessed by Nuffic. It additionally asks for Dutch HAVO-level certificates in physics and mathematics B, with an additional physics course in the stated circumstances.</li>
+   <li><b>Medical/physical:</b> KFA publishes a height range of 158–203 cm and medical/vision conditions. Check its current medical FAQ and obtain professional advice; the formal medical examination decides medical fitness.</li>
+  </ul>
+  <div class="warning"><b>Important for a Canadian applicant:</b> KFA's foreign-diploma process does not automatically mean every Canadian high-school diploma is accepted. Get a written assessment from KFA before choosing courses. The EU/Dutch nationality requirement is a separate issue from the education requirement.</div>
+  <h3>KLM direct pilot recruitment — published requirements</h3>
+  <p>KLM's current cockpit recruitment page for experienced pilots lists, among other things:</p>
+  <ul>
+   <li>Valid passport from an EU member state, including Norway, Switzerland, Iceland and Liechtenstein.</li>
+   <li>Fluent Dutch and English; B2 Dutch exam for non-native Dutch speakers before selection.</li>
+   <li>EASA (Frozen) ATPL(A), valid multi-pilot aircraft type rating and Class 1 medical.</li>
+   <li>Multi-Crew Cooperation, initial CRM, English LPE6 and Advanced UPRT.</li>
+   <li>At least 500 hours on a multi-engine aircraft of 5,700 kg or more, and at least 150 hours in commercial aviation in the 12 months before applying, or the specified EU military-pilot alternative.</li>
+  </ul>
+  <p class="small">These are the published requirements for KLM's experienced-pilot vacancy route. They are not a checklist to complete before applying to KLM Flight Academy. KLM's cadet/academy route is different.</p>
+  <h3>Selection</h3><p>KFA currently describes a multi-stage selection process lasting around three to six months. KLM's experienced-pilot recruitment can include CV screening, online assessment, psychological assessment, simulator grading, interview, security checks and medical examination.</p>
+ </section>
+
+ <section id="school" class="panel">
+  <h2>School and preparation</h2><p class="lead">The best thing to do at the beginning is build the academic and language foundation. You do not need to rush into buying flight lessons.</p>
+  <h3>Subjects to prioritize</h3>
+  <div class="grid">
+   <div class="card"><h3>Mathematics</h3><p>Build confidence with algebra, equations, geometry, trigonometry, graphs and mental arithmetic. KFA's Dutch route specifically names mathematics B at HAVO level, or mathematics A/B at VWO level.</p></div>
+   <div class="card"><h3>Physics</h3><p>Learn forces, motion, pressure, energy, electricity, waves and basic mechanics. Physics is specifically required in KFA's published entry pathways.</p></div>
+   <div class="card"><h3>English</h3><p>Build strong listening, speaking, reading and technical vocabulary. Aviation communication depends on clear, precise English.</p></div>
+   <div class="card"><h3>Dutch</h3><p>Make Dutch a long-term priority if KLM Flight Academy remains the target. Work towards fluent speaking, reading and writing, then formal B2 proficiency.</p></div>
+  </div>
+  <h3>Beginner aviation learning</h3>
+  <ul><li>Learn the four forces of flight: lift, weight, thrust and drag.</li><li>Understand how lift, angle of attack, stalls and weather work.</li><li>Learn the parts of an aircraft and the purpose of the flight controls.</li><li>Practice reading a basic map, compass directions and time calculations.</li><li>Use a flight simulator as a learning aid, not as a replacement for real instruction.</li><li>Watch real cockpit and aviation safety material, and learn standard phraseology gradually.</li></ul>
+  <div class="bluebox"><b>Do not self-diagnose medical eligibility.</b> Glasses or contact lenses do not automatically rule someone out. The applicable EASA Class 1 medical standards and an authorized examiner determine eligibility.</div>
+  <h3>Canadian education question to resolve</h3><p>Ask KFA how a British Columbia Dogwood Diploma or other Canadian secondary-school credential is assessed, what Nuffic documentation is needed, and exactly how to satisfy its Dutch mathematics B and physics certificate requirements. Get the answer in writing and keep it in your records.</p>
+ </section>
+
+ <section id="costs" class="panel">
+  <h2>Costs and financing</h2><p class="lead">Professional flight training is expensive. The exact cost depends heavily on the school and pathway, and prices can change each year.</p>
+  <h3>KLM Flight Academy published financing information</h3>
+  <p>KFA's current financing page says that for 2026 the total training cost is <b>€163,500</b>. It describes an arrangement where students receive an employment agreement with KLM subject to conditions, and an education allowance of €700 gross per month during training. After successful graduation and entering employment, the stated training cost can be paid at once or deducted from gross salary over ten years; the page lists €861 per month for 2026, subject to annual indexation.</p>
+  <div class="warning"><b>Do not treat this as guaranteed admission or guaranteed employment.</b> Read the current contract carefully with a parent/guardian and an independent adviser. Ask what happens if you withdraw, fail a stage, become medically unfit, or do not satisfy the conditions for employment.</div>
+  <h3>Budget items to ask about</h3>
+  <ul><li>Tuition and financing charges, if any.</li><li>Accommodation and living costs in the Netherlands.</li><li>Travel between Canada and the Netherlands.</li><li>Medical examination and any follow-up assessments.</li><li>Language courses and required subject certificates.</li><li>Visa/residence or administrative costs, if applicable to your status.</li><li>Equipment, books, uniform and examination fees.</li></ul>
+  <p class="small">The published KFA financing figures above are a 2026 snapshot. Confirm all numbers and contract terms directly with KFA before relying on them.</p>
+ </section>
+
+ <section id="timeline" class="panel">
+  <h2>A realistic timeline</h2><p class="lead">This is a planning framework, not a promise of admission or a fixed graduation date. Your exact age, school pathway, citizenship, language progress and medical status will affect the timing.</p>
+  <table><thead><tr><th>Stage</th><th>Focus</th><th>Target outcome</th></tr></thead><tbody>
+   <tr><td><b>Now — foundation</b></td><td>Learn aviation basics; strengthen maths, physics and English; begin a serious Dutch study plan; research nationality and school eligibility.</td><td>Know the entry conditions and have a practical education plan.</td></tr>
+   <tr><td><b>Secondary school years</b></td><td>Choose suitable academic subjects and maintain strong results. Ask KFA about Canadian diploma equivalency early.</td><td>Meet or have a documented plan to meet academic requirements.</td></tr>
+   <tr><td><b>Before applying</b></td><td>Resolve nationality, Dutch proficiency, foreign-diploma assessment and Class 1 medical.</td><td>Confirm eligibility before paying application or training costs.</td></tr>
+   <tr><td><b>Selection period</b></td><td>Complete KFA's aptitude, motor, competency and interview stages.</td><td>Pass selection and receive an offer/placement under current rules.</td></tr>
+   <tr><td><b>About 2 years at KFA</b></td><td>Theory, single-engine and multi-engine flying, CPL/IR elements, MCC and type rating.</td><td>Complete the academy's programme and required checks.</td></tr>
+   <tr><td><b>Airline career</b></td><td>Meet all employment conditions, complete airline training and maintain qualifications.</td><td>Begin the KLM cockpit career if the academy/employment conditions are fulfilled.</td></tr>
+  </tbody></table>
+  <div class="bluebox">Your first milestone is not getting into a cockpit immediately. It is confirming that the KLM pathway is legally and academically open to you, then building the qualifications step by step.</div>
+ </section>
+
+ <section id="photos" class="panel">
+  <h2>Photo gallery</h2>
+  <p class="lead">A visual record of my interest in aviation, learning and future milestones. I'll add my own photographs here as the journey develops.</p>
+  <div class="grid">
+   <div class="card"><div style="height:180px;border-radius:10px;background:linear-gradient(135deg,#0b2a50,#2476b9);display:flex;align-items:center;justify-content:center;color:white;font-size:42px">✈</div><h3>Aviation inspiration</h3><p class="small">Aircraft and airlines that inspire my goal of becoming a professional pilot.</p></div>
+   <div class="card"><div style="height:180px;border-radius:10px;background:linear-gradient(135deg,#122e4e,#547d9f);display:flex;align-items:center;justify-content:center;color:white;font-size:42px">⌁</div><h3>Learning & flight simulation</h3><p class="small">My aviation learning, simulator practice and exploration of flight operations.</p></div>
+   <div class="card"><div style="height:180px;border-radius:10px;background:linear-gradient(135deg,#16395c,#70a9ce);display:flex;align-items:center;justify-content:center;color:white;font-size:42px">◈</div><h3>Projects & research</h3><p class="small">Snapshots of the projects, planning and research I complete along the way.</p></div>
+   <div class="card"><div style="height:180px;border-radius:10px;background:linear-gradient(135deg,#071b3a,#d49b38);display:flex;align-items:center;justify-content:center;color:white;font-size:42px">★</div><h3>Future milestones</h3><p class="small">Photos from future aviation experiences, visits, lessons and achievements.</p></div>
+  </div>
+  <div class="warning"><b>Photo update:</b> These are gallery categories, not claims that I've already completed flight lessons or visited these places. Personal photographs will be added as those experiences happen.</div>
+ </section>
+ <section id="resources" class="panel">
+  <h2>Official resources</h2><p class="lead">Use official sources for decisions about eligibility, licensing, medical standards and money. Online forums can be useful for personal experiences, but they are not the final authority.</p>
+  <div class="resource"><b>KLM Flight Academy — Admission requirements</b><br><a href="https://klmflightacademy.nl/piloot-worden/toelatingseisen/" target="_blank" rel="noopener">Official admission requirements</a><p class="small">Nationality, age, language, education, foreign diplomas and medical/physical criteria.</p></div>
+  <div class="resource"><b>KLM Flight Academy — The training programme</b><br><a href="https://klmflightacademy.nl/opleiding/" target="_blank" rel="noopener">Official course outline</a><p class="small">Training phases, duration and qualifications.</p></div>
+  <div class="resource"><b>KLM Flight Academy — Costs and financing</b><br><a href="https://klmflightacademy.nl/opleiding/kosten-financiering/" target="_blank" rel="noopener">Official financing information</a><p class="small">Published tuition financing and repayment arrangements.</p></div>
+  <div class="resource"><b>KLM Careers — Cockpit jobs</b><br><a href="https://careers.klm.com/en/job-area/cockpit/" target="_blank" rel="noopener">Official KLM pilot recruitment requirements</a><p class="small">Requirements for already-qualified pilots applying directly to KLM.</p></div>
+  <div class="resource"><b>KLM Careers — Cockpit FAQ</b><br><a href="https://careers.klm.com/en/faq/cockpit/" target="_blank" rel="noopener">Official cockpit FAQ</a><p class="small">How KLM describes its two pilot recruitment routes.</p></div>
+  <div class="resource"><b>Nuffic — Diploma evaluation</b><br><a href="https://www.nuffic.nl/en/subjects/diploma/credential-evaluation" target="_blank" rel="noopener">Nuffic credential evaluation</a><p class="small">Information about comparing foreign education credentials in the Netherlands. Confirm the exact process KFA requires.</p></div>
+  <div class="resource"><b>EASA — Aircrew rules</b><br><a href="https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no" target="_blank" rel="noopener">EASA Aircrew regulations</a><p class="small">European pilot licensing and training regulations.</p></div>
+  <div class="resource"><b>Transport Canada — Pilot licensing</b><br><a href="https://tc.canada.ca/en/aviation/licensing-pilots-personnel" target="_blank" rel="noopener">Transport Canada licensing information</a><p class="small">Canadian licences and training rules. A Canadian licence is not automatically an EASA licence.</p></div>
+  <h3>Questions to send KLM Flight Academy</h3>
+  <ol><li>Do you accept a Canadian high-school diploma from British Columbia, and what Nuffic evaluation do you require?</li><li>What exact Dutch-level mathematics B and physics certificates must a Canadian applicant obtain?</li><li>Does an applicant need to hold Dutch/EU citizenship when applying, when selection starts, or when training begins?</li><li>What Dutch language certificate or assessment do you accept as proof of B2/fluent Dutch?</li><li>Can you confirm the current Class 1 medical and physical requirements?</li><li>What are the current terms if a student does not complete the course or cannot enter KLM employment?</li></ol>
+ </section>
+</div>
+<footer>PILOTINFO.ONLINE · Daniel’s aviation journey · A personal learning and career-planning portfolio.<br>Always confirm current requirements directly with KLM, KLM Flight Academy, EASA and the relevant authorities.</footer>
+<script>
+const tabs=[...document.querySelectorAll('nav button')];
+tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===b.dataset.tab));window.scrollTo({top:document.querySelector('nav').offsetTop-8,behavior:'smooth'});}));
+</script>
+</body></html>
